@@ -1,0 +1,183 @@
+<html>
+    <head>  
+<link rel="stylesheet" type="text/css" href="imageStyle.css">
+<link rel="stylesheet" type="text/css" href="navigation.css"> 
+ 
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="index.html">Homepage</a>
+    <a href="imagePage.html">Page2</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+<h4><span onclick="openNav()">☰ NAVIGATION</span></h4>
+    <script> /* Open when someone clicks on the span element */
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}</script>
+    </head>  
+    
+    
+    
+    
+<body>
+        
+    <script>
+// Open the Modal
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+    
+<div class = "main">   
+    <!-- Images used to open the lightbox -THUMB NAILS-->
+<div class="row">
+  <div class="column">
+      <div class="content">
+    <img src="https://lh3.googleusercontent.com/5EfQBHDb47tchiART6U6yk3yYS9qBYr6VUssB5wHE1AgavqV5E2SSuzyiNkc7UgVng=w300" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="BLABLABLA">
+          <h3> TEST HEADING</h3>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sollicitudin neque sit amet efficitur congue. Etiam tristique sem eu magna vestibulum semper. Donec vulputate, mi eu ultricies sagittis, massa nunc elementum felis, et tincidunt odio ante in metus. In id nisl in risus accumsan ornare tincidunt nec massa. Quisque ornare pulvinar ante eu faucibus. Donec sed nulla ex. Morbi a velit id lorem egestas porta vel quis urna. Praesent dictum ante turpis</p>
+  </div>
+</div>      
+  <div class="column">
+    <div class="content">
+    <img src="https://lh3.googleusercontent.com/5EfQBHDb47tchiART6U6yk3yYS9qBYr6VUssB5wHE1AgavqV5E2SSuzyiNkc7UgVng=w300" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="BLABLABLA">
+          <h3> TEST HEADING</h3>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sollicitudin neque sit amet efficitur congue. Etiam tristique sem eu magna vestibulum semper. Donec vulputate, mi eu ultricies sagittis, massa nunc elementum felis, et tincidunt odio ante in metus. In id nisl in risus accumsan ornare tincidunt nec massa. Quisque ornare pulvinar ante eu faucibus. Donec sed nulla ex. Morbi a velit id lorem egestas porta vel quis urna. Praesent dictum ante turpis</p>
+  </div>
+</div>      
+  <div class="column">
+    <div class="content">
+    <img src="https://lh3.googleusercontent.com/5EfQBHDb47tchiART6U6yk3yYS9qBYr6VUssB5wHE1AgavqV5E2SSuzyiNkc7UgVng=w300" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="BLABLABLA">
+          <h3> TEST HEADING</h3>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sollicitudin neque sit amet efficitur congue. Etiam tristique sem eu magna vestibulum semper. Donec vulputate, mi eu ultricies sagittis, massa nunc elementum felis, et tincidunt odio ante in metus. In id nisl in risus accumsan ornare tincidunt nec massa. Quisque ornare pulvinar ante eu faucibus. Donec sed nulla ex. Morbi a velit id lorem egestas porta vel quis urna. Praesent dictum ante turpis</p>
+  </div>
+</div>      
+  <div class="column">
+    <div class="content">
+    <img src="https://lh3.googleusercontent.com/5EfQBHDb47tchiART6U6yk3yYS9qBYr6VUssB5wHE1AgavqV5E2SSuzyiNkc7UgVng=w300" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="BLABLABLA">
+          <h3> TEST HEADING</h3>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sollicitudin neque sit amet efficitur congue. Etiam tristique sem eu magna vestibulum semper. Donec vulputate, mi eu ultricies sagittis, massa nunc elementum felis, et tincidunt odio ante in metus. In id nisl in risus accumsan ornare tincidunt nec massa. Quisque ornare pulvinar ante eu faucibus. Donec sed nulla ex. Morbi a velit id lorem egestas porta vel quis urna. Praesent dictum ante turpis</p>
+  </div>
+</div>      
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Trolltunga">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
+    </div>
+  </div>
+</div>
+</div>     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>
