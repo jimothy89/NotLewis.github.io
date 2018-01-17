@@ -29,32 +29,39 @@ p {
   line-height: 1.4em;
 }
 
-
-
-
-.button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    transition-duration: 0.4s;
+h4 {
+    color: black;
+    background-color: darkgray;
 }
 
 
+html, body {margin: 0; height: 100%; overflow: hidden}
 
 
 
 
 
 
+/* BUTTON */
+.button {
+    font-family: 'Roboto', sans-serif;
+    outline:none;
+    cursor: pointer;
 
-
+  height: 40px;
+  text-align: center;
+  width: 130px;
+  border-radius:40px;
+  background: #fff;
+  border: 2px solid #1ECD97;
+  color:#1ECD97;
+  letter-spacing:1px;
+  text-shadow:0;
+  font:{
+    size:12px;
+    weight:bold;
+    }
+}
 
 
 
