@@ -1,36 +1,46 @@
 <html>
-<link rel="stylesheet" type="text/css" href="imagePageStyle.css">
+    <head>  
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="navigation.css"> 
+ 
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="index.html">Homepage</a>
+    <a href="imagePage.html">Page2</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+<h4><span onclick="openNav()">☰ NAVIGATION</span></h4>
+    <script> /* Open when someone clicks on the span element */
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}</script>
+    </head>  
+    
+    
+    
+    
 <body>
 
     
     
     
-    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.pack.js"></script> 
-
-<div id="wrapper"> 
-<ul class="slider homepage-marquee">
-    <li>
-      <h4>&nbsp;</h4>
-      <p>&nbsp;</p>
-      <img src="http://www.sakefuse.com/wp-content/uploads/2013/06/cropped-photo-1-970x300.jpg" alt="" /> </li>
-    <li>
-      <h4>&nbsp;</h4>
-      <p>&nbsp;</p>
-      <img src="http://anderei.net/wp-content/uploads/2013/09/c5-970x300.jpg" alt="" /> </li>
-    <li>
-      <h4>&nbsp;</h4>
-      <p>&nbsp;</p>
-      <img src="http://www.jezakon.si/wp/wp-content/themes/StyleMaster/images/default-slides/earth_970x300.jpg" alt="" /> </li>
-    <li>
-      <h4>&nbsp;</h4>
-      <p>&nbsp;</p>
-      <img src="https://www.ladywellhousefife.co.uk/wp-content/uploads/2014/01/pics-063-970x300.jpg" alt="" /> </li>
-    <li>
-      <h4>&nbsp;</h4>
-      <p>&nbsp;</p>
-      <img src="https://www.tantallonsystems.co.uk/wp-content/uploads/2012/05/Building_Banner_970x300px.jpg" alt="" /> </li>
-</ul>
-</div>
+    
     
     
     
